@@ -1,0 +1,475 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@700&display=swap');
+html, body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+body{
+    background-color: #211d2b;
+    background-size: cover;
+    background: url("./images/bg-stars.svg") top/100% 80% no-repeat, url("./images/pattern-hills.svg") bottom/100% 20% no-repeat, linear-gradient(to bottom, #1e1e28, #251d2c);
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+.text h1{
+    color: white;
+    font-family: 'Red Hat Text', sans-serif;
+    letter-spacing: 10px;
+    font-size: 30px;
+}
+.text{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+.container{
+    width: 100%;
+    height: auto;
+    margin-top: 100px;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+
+}
+.main-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+width: 100%;
+align-items: center;
+}
+.container div{
+    width: 200px;
+    height: 100px;
+    margin-right: 60px;
+    background-color: #2c2c44;
+}
+ .timer-up::before{
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: #211d2b;
+    margin-top: 90px;
+    border-top-right-radius: 10px;
+position: absolute;
+}
+.timer-up::after{
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: #211d2b;
+    position: absolute;
+    margin-top: -140px;
+    margin-left: 190px;
+    border-top-left-radius: 10px;
+}
+.timer-bottom::before{
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: #211d2b;
+    border-bottom-right-radius: 10px;
+    position: absolute;
+    margin-top: -0px;
+}
+.timer-bottom::after{
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: #211d2b;
+    margin-left: 190px;
+    border-bottom-left-radius: 10px;
+    position: absolute;
+    margin-top: -130px;
+}
+.container2{
+    width: 100%;
+    display: flex;
+    height: 100px;
+    overflow: hidden;   
+    justify-content: center;
+}
+.container2 div{
+    width: 200px;
+    height: 100px;
+    margin-right: 60px;
+    background-color: #34364f;
+}
+.time{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+color: #8787a1;
+font-family: 'Red Hat Text', sans-serif;
+font-size: 11px;
+letter-spacing: 10px;
+margin-top: 20px;
+}
+.day{
+    margin-left: 10%;
+}
+.d1{
+   width: 200px;
+  margin-right: 60px;
+  
+}
+.d2{
+    width: 200px;
+  margin-right: 60px;  
+   
+}
+.d3{
+    width: 200px;
+    margin-right: 60px;  
+
+}
+.d4{
+    width: 200px;
+}
+.box{
+    background-color: rgba(37, 29, 44, 0.8);
+    width: 320px;
+    height: 500px;
+  position: absolute;
+  bottom:220px;
+  border-radius: 20px;
+  border:2px solid #343650;
+}
+.icon-setting:hover{
+filter: invert(56%) sepia(54%) saturate(3617%) hue-rotate(313deg) brightness(103%) contrast(95%);
+}
+
+.box-container{
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    visibility: visible;
+    opacity: 1;
+    transition: all 1s;
+}
+.icon-close{
+    display: flex;
+margin-top: 20px;
+    margin-left: 85%;
+}
+.form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+}
+.form input{
+    width: 70px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-color: #2c2c44;
+    text-align: center;
+    color: #f95f83;
+}
+.setting{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+.form h2{
+    color: #f95f83;
+font-family: 'Red Hat Text', sans-serif;
+font-weight: 400;
+letter-spacing: 7px;
+font-size: 18px;
+}
+.form button{
+    margin-top: 30px;
+    width: 80px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #2c2c44;
+    color: #f95f83;
+border: none;
+outline: none;
+font-size: 13px;
+letter-spacing: 2px;
+cursor: pointer;
+}
+.form button:hover{
+    background-color: #f95f83;
+    color: #34364f;
+}
+.form input:focus{
+    border: 1px solid #f95f83;
+    color: #f95f83;
+}
+
+.icon-close img:hover{
+filter: invert(56%) sepia(54%) saturate(3617%) hue-rotate(313deg) brightness(103%) contrast(95%);
+}
+.container h1{
+    font-size: 100px;
+font-family: 'Red Hat Text', sans-serif;
+color: #d54f70;
+margin-top: 30px;
+text-align: center;
+}
+.container2 h1{
+    
+    font-size: 100px;
+font-family: 'Red Hat Text', sans-serif;
+color: #f95f83;
+margin-top: -70px;
+text-align: center;
+}
+.icon-ul{
+    display: inline-block ;
+}
+.icon-ul li{
+    display: inline;
+    margin-right: 50px;
+}
+.icons{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 60px;
+}
+.attribution{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 20px;
+    color: #8787a1;
+    font-size: 11px;
+font-family: 'Red Hat Text', sans-serif;
+}
+.attribution a{
+    color: rgba(73, 117, 212, 0.678);
+}
+.attribution a:hover{
+    color: #f95f83;
+}
+.icons li:hover{
+filter: invert(56%) sepia(54%) saturate(3617%) hue-rotate(313deg) brightness(103%) contrast(95%);
+cursor: pointer;
+}
+@media screen and (max-width:1200px) {
+    .container, .container2{
+        width: 90%;
+        margin-left: 7%;
+    }
+    .time{
+        width: 90%;
+        margin-left: 7%;
+    }
+}
+@media screen and (max-width:1024px) {
+    .container, .container2{
+        margin-top: 0;
+    }
+    .text{
+        margin-top: 50px;
+    }
+    .d4{
+        margin-left: 50px;  
+    }
+    .d3{
+     margin-left: -50px;  
+        margin-right: 0px;
+    }
+    .timer-up::after{
+        content: '';
+        width: 0px;
+        height: 0px;
+        position: static;
+        margin: 0;
+    }
+    .timer-bottom::after{
+        content: '';
+        width: 0px;
+        height: 0px;
+        position: static;
+        margin: 0;   
+    }
+}
+@media screen and (max-width:950px) {
+    .container div{
+        width: 150px;
+        margin-top: 20PX;
+    }
+    .container h1{
+        font-size: 70px;
+        margin-top: 50px;
+    }
+    .container2 div{
+width: 150px;
+    }
+    .container2 h1{
+        font-size: 70px;
+        margin-top: -50px;
+    }
+    .time h2{
+        font-size: 15px;
+    }
+    .time{
+        margin-left: 5%;
+    }
+    .text h1{
+        margin-top: 100px;
+    }
+}
+@media screen and (max-width:800px) {
+ .time h2{
+     font-size: 12px;
+ }  
+ .d1{
+     margin-left: 40px;
+    letter-spacing: 7px;
+ }
+ .d4{
+    letter-spacing: 7px;
+
+ }
+ .container div{
+     margin-right: 20px;
+ }
+ .container2 div{
+     margin-right: 20px;
+ }
+ .container2 h1{
+    font-size: 70px;
+    margin-top: -50px;
+}
+.d3{
+    margin-left: 0;
+    letter-spacing: 7px;
+margin-right: 0px;
+}
+.d2{
+    letter-spacing: 7px;
+}
+.main-container{
+    width: 100%;
+}
+.container{
+    margin-left: 2%;
+}
+.container2{
+    margin-left: 2%;
+}
+}
+@media screen and (max-width:650px) {
+    .d3{
+        margin-left: -50px;
+        letter-spacing: 5px;
+
+    }
+    .d4{
+        margin-left: 20px;
+        letter-spacing: 5px;
+    }
+    .d2{
+        letter-spacing: 5px;
+        margin-left: -10px;
+    }
+    .d1{
+        letter-spacing: 5px;
+    }
+    .text h1{
+        font-size: 25px;
+    }
+}
+@media screen and (max-width:550px) {
+    .text h1{
+        font-size: 18px;
+    }
+    .timer-bottom::before{
+        content: '';
+        width: 0;
+        height: 0;
+     margin: 0;
+    }
+    .timer-up::before{
+        content: '';
+        width: 0;
+        height: 0;
+     margin: 0;
+    }
+    .time{
+        margin-left: 0;
+    }
+    .container div{
+        height: 80px;
+    }
+    .container2 div{
+        height: 80px;
+    }
+    .container h1{
+margin-top: 30px;
+    }
+}
+@media screen and (max-width:450px) {
+    .time{
+        margin-left: 0;
+    }
+    .text h1{
+        width: 350px;
+        text-align: center;
+    }
+    .container h1{
+        font-size: 60px;
+        margin-top: 40px;
+    }
+    .container2 h1{
+        font-size: 60px;
+margin-top: -40px;
+    }
+    .d1 h2{
+        margin-left: -0px;
+        position: absolute;
+    }
+    .d2 h2{
+        margin-left: 40px;
+        margin-right: 0px;
+    }
+.time h2{
+    font-size: 10px;
+}
+}
+@media screen and (max-width:400px) {
+    .container h1{
+        font-size: 50px;
+    }
+    .container2 h1{
+        font-size: 50px;
+    }
+    .d1 h2{
+        margin-left: 20px;
+        letter-spacing: 0;
+    }
+    .d4 h2{
+        margin-left: -10px;
+        letter-spacing: 0;
+    }
+    .d3 h2{
+        letter-spacing: 0;
+    }
+    .d2 h2{
+        letter-spacing: 0;
+    }
+    .d1{
+        margin-left: 10px;
+    }
+    .d2{
+        margin-left: -60px;
+        margin-right:100px;
+    }
+    .d4 h2{
+        margin-left: 0px;
+    }
+}
